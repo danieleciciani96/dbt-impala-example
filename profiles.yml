@@ -1,0 +1,15 @@
+dbt_impala_demo:
+  target: dev
+  outputs:
+    dev:
+     type: impala
+     host: coordinator-se-sandbox-impala.dw-se-sandbx-aws.a465-9q4k.cloudera.site
+     port: 443
+     dbname: dbt_demo
+     schema: dbt_demo
+     user: dciciani
+     password: Cloudera$2022
+     auth_type: ldap
+     use_http_transport: true
+     use_ssl: true
+     http_path: cliservice
