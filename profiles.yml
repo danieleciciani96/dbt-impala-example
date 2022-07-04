@@ -3,12 +3,12 @@ dbt_impala_demo:
   outputs:
     dev:
      type: impala
-     host: coordinator-se-sandbox-impala.dw-se-sandbx-aws.a465-9q4k.cloudera.site
+     host: coordinator-dev-user-vw-dub.dw-lgim-dev-dublin.k9sz-n8au.cloudera.site
      port: 443
-     dbname: dbt_demo
-     schema: dbt_demo
-     user: dciciani
-     password: Cloudera$2022
+     dbname: dbt_poc
+     schema: dbt_poc
+     user: d00_cdpbbgdfx_svc
+     password: Password123!
      auth_type: ldap
      use_http_transport: true
      use_ssl: true
